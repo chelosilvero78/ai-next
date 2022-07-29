@@ -7,7 +7,6 @@ import styles from './MainLayout.module.css';
 export const MainLayout = ({ children }) => {
     return (
         <div className={styles.container}>
-          
           <Head>
             <title>Home - Fernando</title>
             <meta name="description" content="Home Page" />

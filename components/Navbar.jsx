@@ -19,6 +19,24 @@ const menuItems = [
       href: '/pricing'
   },
 ];
+const menuSiderLeft = [
+  {
+      text: 'Home',
+      href: '/'
+  },
+  {
+      text: 'About',
+      href: '/about'
+  },
+  {
+      text: 'Contact',
+      href: '/contact'
+  },
+  {
+      text: 'Pricing',
+      href: '/pricing'
+  },
+];
 
 export const Navbar = () => {
   return (
@@ -31,11 +49,12 @@ export const Navbar = () => {
         }
 
         {/* 
-        <ActiveLink text="Home" href="/" />
-        <ActiveLink text="About" href="/about" />
-        <ActiveLink text="Contact" href="/contact" /> 
-        <ActiveLink text="Pricing" href="/pricing" />  
+            <ActiveLink text="Home" href="/" />
+            <ActiveLink text="About" href="/about" />
+            <ActiveLink text="Contact" href="/contact" /> 
+            <ActiveLink text="Pricing" href="/pricing" />  
         */}
+        
     </nav>
   );
 };
