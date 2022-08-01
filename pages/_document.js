@@ -19,7 +19,7 @@ class MyDocument extends Document {
                 <meta name="keywords" content="" />
                 <meta name="description" content="" />
                 <meta name="author" content="" />
-                <link rel="shortcut icon" type="image/png" href="/images/favicon.png" />
+                <link rel="shortcut icon" type="/image/png" href="/images/favicon.png" />
                 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
 
                 <link href="/components/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
@@ -53,6 +53,8 @@ class MyDocument extends Document {
                 <script src="/components/inputmask/inputmask@4.0.0/dist/min/inputmask/phone-codes/phone.min.js"></script>
                 <script src="/components/exif-js/exif.js"></script>
                 <script src="/components/sweetalert2@9/sweetalert2@9.js"></script>
+                <script src="/components/sweetalert2@9/sweetalert2@9.js"></script>
+                <script src="/js/funciones.js" type="text/javascript"></script>        
             </body>
         </Html>
     );
