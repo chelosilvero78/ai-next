@@ -6,59 +6,72 @@ class MyDocument extends Document {
         return { ...initialProps };
     }
 
-  render() {
-      return (
-        <Html>
-            <Head>
-                <meta charSet="UTF-8" />
-                <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+    render() {
+        return (
+            <Html>
+                <Head>
+                    <meta charSet="UTF-8" />
+                    <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
 
-                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-                <title>AI_20171219_1128 | MENÚ</title>
-                <meta name="keywords" content="" />
-                <meta name="description" content="" />
-                <meta name="author" content="" />
-                <link rel="shortcut icon" type="/image/png" href="/images/favicon.png" />
-                <link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
+                    <title> AI_20171219_1128 </title>
+                    <meta name="description" content="Web site auditoria interna de la cooperativa sancristobal" />
 
-                <link href="/components/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-                <link href="/components/animate/css/animate.css" rel="stylesheet" type="text/css" />
-                <link href="/css/fontawesome-all.min.css" rel="stylesheet" type="text/css" />
-                <link href="/components/fileinput/css/fileinput.min.css" rel="stylesheet" type="text/css" />
-                <link href="/components/fileinput/themes/explorer/theme.min.css" rel="stylesheet" type="text/css" />
-                <link href="/components/bootstrap-datepicker/css/bootstrap-datepicker.css" rel="stylesheet" type="text/css" />
-                <link href="/plugins/jqplot/jquery.jqplot.min.css" rel="stylesheet" type="text/css" />
-                <link href="/components/footables-boostrap/footable-3.1.5/css/footable.bootstrap.min.css" rel="stylesheet" type="text/css" />
-                <link href="/components/select-bootstrap/select-bootstrap1.12.4/css/bootstrap-select.min.css" rel="stylesheet" type="text/css"/>
-            </Head>
-            <body>
-                <Main />
-                <NextScript />
-                <script src="/components/jquery/jquery3.4.1/jquery-3.4.1.js"></script>
-                <script src="/components/bootstrap/js/bootstrap.min.js"></script>
-                <script src="/components/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
-                <script src="/components/bootstrap-datepicker/locales/bootstrap-datepicker.es.min.js"></script>
-                <script src="/plugins/moment/moment-with-locales.min.js"></script>
-                <script src="/plugins/datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
-                <script src="/components/excel/js/xlsx.full.min.js"></script>
-                <script src="/components/fileinput/js/fileinput.min.js"></script>
-                <script src="/components/fileinput/themes/explorer/theme.min.js"></script>
-                <script src="/components/fileinput/js/locales/es.js"></script>
-                <script src="/components/moment/min/moment.min.js"></script>        
-                <script src="/components/moment/min/locales.js"></script>
-                <script src="/components/footables-boostrap/footable-3.1.5/js/footable.min.js"></script>
-                <script src="/components/select-bootstrap/select-bootstrap1.12.4/js/bootstrap-select.min.js"></script>
-                <script src="/components/inputmask/inputmask@4.0.0/dist/jquery.inputmask.bundle.min.js"></script>
-                <script src="/components/inputmask/inputmask@4.0.0/dist/min/inputmask/phone-codes/phone.min.js"></script>
-                <script src="/components/exif-js/exif.js"></script>
-                <script src="/components/sweetalert2@9/sweetalert2@9.js"></script>
-                <script src="/components/sweetalert2@9/sweetalert2@9.js"></script>
-                <script src="/js/funciones.js" type="text/javascript"></script>        
-            </body>
-        </Html>
-    );
-  }
+                    <meta name="theme-color" content="#000000" />
+                    <link rel="shortcut icon" type="image/png" href="/img/favicon.png" />
+
+                    {/* Google Font: Source Sans Pro */}
+                    <link
+                        rel="stylesheet"
+                        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback"
+                    />
+                    {/* Font Awesome Icons */}
+                    <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css" />
+                    {/* IonIcons */}
+                    <link
+                        rel="stylesheet"
+                        href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"
+                    />
+                    {/* Theme style */}
+                    <link rel="stylesheet" href="/dist/css/adminlte.min.css" />
+                    <link rel="apple-touch-icon" href="/logo192.png" />
+                    {/*
+                        manifest.json provides metadata used when your web app is installed on a
+                        user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+                    */}
+                    <link rel="manifest" href="/manifest.json" />
+                    {/*
+                        Notice the use of %PUBLIC_URL% in the tags above.
+                        It will be replaced with the URL of the `public` folder during the build.
+                        Only files inside the `public` folder can be referenced from the HTML.
+
+                        Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+                        work correctly both with client-side routing and a non-root public URL.
+                        Learn how to configure a non-root public URL by running `npm run build`.
+                    */}
+
+                </Head>
+                <body>
+                    <Main />
+                    <NextScript />
+                </body>
+                {/* jQuery */}
+                <script src="/plugins/jquery/jquery.min.js"></script>
+                {/* Bootstrap */}
+                <script src="/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+                {/* AdminLTE */}
+                <script src="/dist/js/adminlte.js"></script>
+
+                {/* OPTIONAL SCRIPTS  */}
+                <script src="/plugins/chart.js/Chart.min.js"></script>
+                {/* AdminLTE for demo purposes */}
+                <script src="/dist/js/demo.js"></script>
+                {/* AdminLTE dashboard demo (This is only for demo purposes) */}
+                <script src="/dist/js/pages/dashboard3.js"></script>
+            </Html>
+        );
+    }
 }
 
 export default MyDocument;
