@@ -2,13 +2,11 @@
 
 import { Header, Aside, Content, Footer } from '../ui';
 
-export const AiLayout = () => {
+const AiLayout = () => {
   return (
     <>
-      <Header />
       <Aside />
-      <Content />
-      <Footer />
     </>
   )
 }
+export default AiLayout;

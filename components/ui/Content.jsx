@@ -1,4 +1,4 @@
-export default function Content() {
+const Content=({children})=> {
     return (
         <div className="content-wrapper">
             {/* Content Header (Page header) */}
@@ -13,6 +13,7 @@ export default function Content() {
                                 <li className="breadcrumb-item"><a href="#">Home</a></li>
                                 <li className="breadcrumb-item active">Dashboard v3</li>
                             </ol>
+                            <div>{children}</div>
                         </div>{/* /.col */}
                     </div>{/* /.row */}
                 </div>{/* /.container-fluid */}
@@ -20,3 +21,4 @@ export default function Content() {
         </div>
     )
 }
+export default Content;

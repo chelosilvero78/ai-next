@@ -1,4 +1,4 @@
-export default function Aside() {
+const Aside=()=> {
     return (
         // < !--Main Sidebar Container-- >
         <aside className="main-sidebar sidebar-dark-primary elevation-4">
@@ -674,3 +674,5 @@ export default function Aside() {
 
     )
 }
+
+export default Aside;
