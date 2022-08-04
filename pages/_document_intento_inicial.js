@@ -50,25 +50,24 @@ class MyDocument extends Document {
                         work correctly both with client-side routing and a non-root public URL.
                         Learn how to configure a non-root public URL by running `npm run build`.
                     */}
+                                    {/* jQuery */}
+                    <script src="/plugins/jquery/jquery.min.js"></script>
+                    {/* Bootstrap */}
+                    <script src="/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+                    {/* AdminLTE */}
+                    <script src="/dist/js/adminlte.js"></script>
 
+                    {/* OPTIONAL SCRIPTS  */}
+                    <script src="/plugins/chart.js/Chart.min.js"></script>
+                    {/* AdminLTE for demo purposes */}
+                    <script src="/dist/js/demo.js"></script>
+                    {/* AdminLTE dashboard demo (This is only for demo purposes) */}
+                    <script src="/dist/js/pages/dashboard3.js"></script>
                 </Head>
                 <body>
                     <Main />
                     <NextScript />
                 </body>
-                {/* jQuery */}
-                <script src="/plugins/jquery/jquery.min.js"></script>
-                {/* Bootstrap */}
-                <script src="/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-                {/* AdminLTE */}
-                <script src="/dist/js/adminlte.js"></script>
-
-                {/* OPTIONAL SCRIPTS  */}
-                <script src="/plugins/chart.js/Chart.min.js"></script>
-                {/* AdminLTE for demo purposes */}
-                <script src="/dist/js/demo.js"></script>
-                {/* AdminLTE dashboard demo (This is only for demo purposes) */}
-                <script src="/dist/js/pages/dashboard3.js"></script>
             </Html>
         );
     }

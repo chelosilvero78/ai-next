@@ -1,4 +1,4 @@
-const Sidebar = () => {
+const SidebarAi = () => {
   return (
     <nav id="sidebar" className="animated bounceInRight">
       <ul id="menu" className="">
@@ -113,4 +113,4 @@ const Sidebar = () => {
   )
 }
 
-export default Sidebar
+export default SidebarAi

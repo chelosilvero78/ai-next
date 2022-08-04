@@ -1,4 +1,4 @@
-const Navbar = () => {
+const NavbarAiOld = () => {
   return (
     <nav className="navbar navbar-inverse navbar-fixed-top navbar-default">
       <div className="container-fluid">
@@ -80,4 +80,4 @@ const Navbar = () => {
   )
 }
 
-export default Navbar
+export default NavbarAiOld;

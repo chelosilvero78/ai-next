@@ -1,9 +1,10 @@
 import { AiLayout } from '../components/layouts';
 
-const Home= () => {
+const Home = () => {
   return (
-    // <AiLayout title={'Ai - Home'} pageDescription={'Pagina Principal del Sistema de Auditoria Interna'}/>
-    <AiLayout />
+    <AiLayout>
+      <h1>Home - Ai</h1>
+    </AiLayout>
   )
 }
 

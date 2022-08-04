@@ -1,4 +1,4 @@
-export default function Footer() {
+const Footer=()=> {
     return (
         <footer className = "main-footer" >
             <strong>Copyright © 2017-2022 <a href="https://adminlte.io">Ai</a>.</strong>
@@ -9,3 +9,4 @@ export default function Footer() {
         </footer >
     )
 }
+export default Footer;
