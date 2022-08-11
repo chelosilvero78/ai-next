@@ -3,17 +3,29 @@ import 'primereact/resources/primereact.min.css';
 import 'primeicons/primeicons.css';
 import '../styles/globals.css'   // import '../styles/main.css';
 
-import SEO from '../components/seo/Seo'
-import LayoutAi from '../components/layouts'
+export default function MyApp({ Component, pageProps }) {
 
-function MyApp({ Component, pageProps }) {
+  const getLayout = Component.getLayout || ((page) => page );
 
-   return (
-    <LayoutAi>
-      <SEO />
-      <Component {...pageProps} />
-    </LayoutAi>
-  )
+  // return (
+  //   <>
+  //     <Component {...pageProps} />
+  //   </>
+  // )
+  return getLayout( <Component {...pageProps} /> )
 }
 
-export default MyApp
+// import SEO from '../components/seo/Seo'
+// import LayoutAi from '../components/layouts'
+
+// function MyApp({ Component, pageProps }) {
+
+//    return (
+//     <LayoutAi>
+//       <SEO />
+//       <Component {...pageProps} />
+//     </LayoutAi>
+//   )
+// }
+
+// export default MyApp

@@ -1,11 +1,11 @@
 //import Head from 'next/head';
-import { Header,Sidebar,Breadcrumb,Footer } from '../ui';
+import { Header, Sidebar, Breadcrumb, Footer } from '../ui';
 
-const AiLayout = ({ children }) => {
-  return ( 
+export const AiLayout = ({ children }) => {
+  return (
     <div className="wrapper">
       <Header />
-      <Sidebar   />
+      <Sidebar />
       <div className="content-wrapper">
         <Breadcrumb />
         <section className="content">
@@ -16,4 +16,3 @@ const AiLayout = ({ children }) => {
     </div>
   )
 }
-export default AiLayout;

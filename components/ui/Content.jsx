@@ -1,4 +1,4 @@
-const Content=({children})=> {
+export const Content=({children})=> {
     return (
         <div className="content-wrapper">
             {/* Content Header (Page header) */}
@@ -21,4 +21,3 @@ const Content=({children})=> {
         </div>
     )
 }
-export default Content;

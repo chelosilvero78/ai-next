@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-function Header() {
+export const Header=()=> {
 
     return (
         <nav className="main-header navbar navbar-expand navbar-white navbar-light">
@@ -191,5 +191,3 @@ function Header() {
  
     )
 }
-
-export default Header

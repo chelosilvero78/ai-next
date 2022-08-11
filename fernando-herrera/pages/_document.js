@@ -1,6 +1,6 @@
-import Document, { Html, Head, Main, NextScript } from "next/document";
+import Document, { Head, Main, NextScript } from "next/document";
 
-class MyDocument extends Document {
+export default class MyDocument extends Document {
     static async getInitialProps(ctx) {
         const initialProps = await Document.getInitialProps(ctx);
         return { ...initialProps };
@@ -8,7 +8,7 @@ class MyDocument extends Document {
 
   render() {
       return (
-        <Html>
+        <html>
             <Head>
                 <meta charSet="UTF-8" />
                 <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
@@ -22,9 +22,9 @@ class MyDocument extends Document {
                 <link rel="shortcut icon" type="/image/png" href="/img/favicon.png" />
                 {/* <link rel="apple-touch-icon" href="/img/apple-touch-icon.png" /> */}
 
-                <link href="/components/bootstrap/css/bootstrap.min.css" rel="styltrap-select.min.css" rel="stylesheet" type="text/css"/>
+                <link href="/components/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
             </Head>
-            <body>
+            <body className="sidebar-mini">
                 <Main />
                 <NextScript />
                 <script src="/components/jquery/jquery3.4.1/jquery-3.4.1.js"></script>
@@ -48,9 +48,7 @@ class MyDocument extends Document {
                 <script src="/components/sweetalert2@9/sweetalert2@9.js"></script>
                 <script src="/js/funciones.js" type="text/javascript"></script>        
             </body>
-        </Html>
+        </html>
     );
   }
 }
-
-export default MyDocument;

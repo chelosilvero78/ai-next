@@ -1,4 +1,4 @@
-function Breadcrumb() {
+export const Breadcrumb=()=> {
     return (
         <section className="content-header">
             <div className="container-fluid">
@@ -17,5 +17,3 @@ function Breadcrumb() {
         </section>
     )
 }
-
-export default Breadcrumb

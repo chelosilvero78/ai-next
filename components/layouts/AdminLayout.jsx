@@ -7,13 +7,13 @@ export const AdminLayout = ({ children, title, pageDescription, imageFullUrl }) 
   return (
     <>
         <Head>
-            <title>{ title }</title>
+            <title>{title}</title>
 
-            <meta name="description" content={ pageDescription } />
+            <meta name="description" content={pageDescription} />
             
             
-            <meta name="og:title" content={ title } />
-            <meta name="og:description" content={ pageDescription } />
+            <meta name="og:title" content={title} />
+            <meta name="og:description" content={pageDescription} />
 
             {
                 imageFullUrl && (

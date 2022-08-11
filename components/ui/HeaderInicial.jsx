@@ -1,4 +1,4 @@
-const HeaderInicial=()=> {
+export const HeaderInicial=()=> {
     return (
         <nav className="main-header navbar navbar-expand navbar-white navbar-light">
             {/* Left navbar links */}
@@ -135,5 +135,3 @@ const HeaderInicial=()=> {
         </nav>
     )
 }
-
-export default HeaderInicial;

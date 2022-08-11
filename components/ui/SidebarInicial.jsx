@@ -1,4 +1,4 @@
-const SidebarInicial=()=> {
+export const SidebarInicial=()=> {
     return (
         // < !--Main Sidebar Container-- >
         <aside className="main-sidebar sidebar-dark-primary elevation-4">
@@ -674,5 +674,3 @@ const SidebarInicial=()=> {
 
     )
 }
-
-export default SidebarInicial;

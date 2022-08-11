@@ -1,5 +1,5 @@
 
-const Sidebar = () => {
+export const Sidebar = () => {
 
   return (
     <>
@@ -83,5 +83,3 @@ const Sidebar = () => {
 
   )
 }
-
-export default Sidebar;

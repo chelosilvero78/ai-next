@@ -1,11 +1,11 @@
 import { AiLayout } from '../components/layouts';
 
-const Home = () => {
+
+export default function HomePage() {
+
   return (
     <AiLayout>
-      <h1>Home - Ai</h1>
+        <h1>AI LAYOUT</h1>
     </AiLayout>
   )
 }
-
-export default Home;
