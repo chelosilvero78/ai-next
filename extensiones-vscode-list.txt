@@ -1,24 +1,29 @@
-code --install-extension bradlc.vscode-tailwindcss
-code --install-extension burkeholland.simple-react-snippets
-code --install-extension christian-kohler.path-intellisense
-code --install-extension dbaeumer.vscode-eslint
-code --install-extension dsznajder.es7-react-js-snippets
-code --install-extension dzhavat.css-flexbox-cheatsheet
-code --install-extension ecmel.vscode-spring-boot
+code --install-extension bradlc.vscode-tailwindcss *
+code --install-extension burkeholland.simple-react-snippets *
+code --install-extension christian-kohler.path-intellisense *
+code --install-extension dbaeumer.vscode-eslint *
+code --install-extension dsznajder.es7-react-js-snippets *
+code --install-extension dzhavat.css-flexbox-cheatsheet *
 code --install-extension EditorConfig.EditorConfig
 code --install-extension esbenp.prettier-vscode
-code --install-extension FallenMax.mithril-emmet
-code --install-extension formulahendry.auto-close-tag
+code --install-extension FallenMax.mithril-emmet *
+code --install-extension formulahendry.auto-close-tag *
 code --install-extension funkyremi.vscode-google-translate
-code --install-extension Gruntfuggly.activitusbar
+code --install-extension Gruntfuggly.activitusbar *
 code --install-extension pdconsec.vscode-print
-code --install-extension Pivotal.vscode-boot-dev-pack
-code --install-extension Pivotal.vscode-spring-boot
-code --install-extension PKief.material-icon-theme
-code --install-extension pmneo.tsimporter
+code --install-extension PKief.material-icon-theme *
+code --install-extension pmneo.tsimporter *
+code --install-extension riazxrazor.html-to-jsx *
+code --install-extension VisualStudioExptTeam.vscodeintellicode *
+code --install-extension Wscats.eno
+code --install-extension xabikos.JavaScriptSnippets *
+code --install-extension Zignd.html-css-class-completion *
+
+//EXTENSIONES PARA JAVA
 code --install-extension redhat.java
-code --install-extension riazxrazor.html-to-jsx
-code --install-extension VisualStudioExptTeam.vscodeintellicode
+code --install-extension Pivotal.vscode-boot-dev-pack 
+code --install-extension Pivotal.vscode-spring-boot
+code --install-extension ecmel.vscode-spring-boot
 code --install-extension vscjava.vscode-java-debug
 code --install-extension vscjava.vscode-java-dependency
 code --install-extension vscjava.vscode-java-pack
@@ -26,6 +31,3 @@ code --install-extension vscjava.vscode-java-test
 code --install-extension vscjava.vscode-maven
 code --install-extension vscjava.vscode-spring-boot-dashboard
 code --install-extension vscjava.vscode-spring-initializr
-code --install-extension Wscats.eno
-code --install-extension xabikos.JavaScriptSnippets
-code --install-extension Zignd.html-css-class-completion

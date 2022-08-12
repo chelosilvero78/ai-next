@@ -1,0 +1,15 @@
+[detalle]
+    Basically you just need to add lines to ~/.gitconfig
+        [alias]
+        st = status
+        ci = commit -v
+[comando]               # Or you can use the git config alias command
+    $ git config --global alias.st status
+[On unix, use single quotes if the alias has a space:]
+    $ git config --global alias.ci 'commit -v'
+[On windows, use double quotes if the alias has a space or a command line argument:]
+    c:\dev> git config --global alias.ci "commit -v"
+
+[lista de alias mios]
+git config --global alias.lg "log --oneline --decorate --all --graph"
+git config --global alias.s "status -s -b"

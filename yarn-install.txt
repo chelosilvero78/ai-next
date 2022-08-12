@@ -3,3 +3,11 @@
 
 #devDependencies
     yarn add -D redux-devtools-extension sass
+
+[DEPENDENCIAS PARA PROYECTO NEXTJS]
+    yarn add @ant-design/icons antd
+#Dependencies:
+    yarn add primeicons primereact @ant-design/icons @tinymce/tinymce-react antd chart.js faker jwt-decode moment query-string react-drag-sortable react-dropzone react-redux react-scroll redux redux-thunk socket.io-client@3.0.0 use-react-router-breadcrumbs
+
+#devDependencies
+    yarn add -D redux-devtools-extension sass
