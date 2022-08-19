@@ -15,6 +15,15 @@ export default function MyApp({ Component, pageProps }) {
   return getLayout( <Component {...pageProps} /> )
 }
 
+//-------------------------------------------------------
+// export default function MyApp({ Component, pageProps }) {
+//   // Use the layout defined at the page level, if available (Usar el diseño definido en el nivel de página, si está disponible)
+//   const getLayout = Component.getLayout || ((page) => page)
+
+//   return getLayout(<Component {...pageProps} />)
+// }
+//-------------------------------------------------------
+
 // import SEO from '../components/seo/Seo'
 // import LayoutAi from '../components/layouts'
 
