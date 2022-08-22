@@ -1,0 +1,24 @@
+@import "../../../../scss/index.scss";
+
+.my-info {
+  span {
+    font-weight: bold;
+    color: $font-light;
+    font-size: 0.875 em; //1 rem;
+  }
+  img {
+    width: 20px;
+    margin-bottom: 20px;
+  }
+  &_info-item {
+    margin-bottom: 14px;
+    color: $primary-color-dark;
+    text-align: justify;
+    text-justify: inter-word;
+    padding-right: 24 px;
+  }
+
+  .social-links {
+    justify-content: flex-start;
+  }
+}

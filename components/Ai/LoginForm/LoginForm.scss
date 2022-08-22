@@ -1,0 +1,112 @@
+@import "../../../scss/index.scss";
+
+.login-form {
+  padding: 20px;
+  .ant-form-item:last-of-type {
+    margin: 0;
+  }
+
+  &__input {
+    .ant-input-prefix {
+      i {
+        font-size: 0em + calc(22px / $defaultFontSize);
+      }
+    }
+
+    input {
+      font-size: 0em + calc(20px / $defaultFontSize);
+      padding: 20px 20px 20px 40px !important;
+      &:focus {
+        border-color: $primary-color;
+        box-shadow: none;
+      }
+    }
+  }
+
+  &__button {
+    //width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    //flex-direction: row;
+    align-items: center;
+
+    font-size: 0em + calc(22px / $defaultFontSize);
+    height: 42px;
+    margin-top: 20px;
+    &-ok {
+      background-color: $primary-color;
+      color: $font-light;
+    }
+    &-exit {
+      background-color: $youtube;
+      color: $font-light;
+    }
+    &:hover {
+      background-color: $primary-color-hover;
+      color: $font-light;
+    }
+    &:focus,
+    &:active {
+      background-color: $primary-color;
+      color: $font-light;
+      border: 0;
+    }
+  }
+}
+
+/*
+    fichero principal de estilos
+*/
+/* 
+    Created on : 18/07/2019, 10:29:43 AM
+    Author     : msilvero
+*/
+
+/*
+    estilos de la pantalla de login
+*/
+#pagina-acceso {
+  font-size: 10px !important;
+  //background-image: url(../img/fondo.png);
+  height: 100vh;
+  width: 100vw;
+  background-image: url("../../../assets/img/jpg/best-practices.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+#panel-acceso {
+  width: 20rem; /*300px;*/
+  height: 20rem; /*160px*/
+  position: absolute;
+  top: 20%;
+  left: 35%;
+  margin-top: -90px; /*-80px*/
+  margin-left: -100px; /*-150px;*/
+}
+.logo {
+  width: 22rem; /*300px;*/
+  background: transparent;
+  border-radius: 50%;
+}
+form img:hover {
+  background: #f9a03f;
+  opacity: 0.8;
+}
+
+// Justified button groups
+//adaptación a boostrap 3  .btn-group .btn-group-justified
+// ----------------------
+.btn-group-justified {
+  display: flex;
+  width: 100%;
+  .btn,
+  .btn-group {
+    flex: 1;
+    .btn {
+      width: 100%;
+    }
+    .dropdown-menu {
+      left: auto;
+    }
+  }
+}

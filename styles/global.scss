@@ -1,22 +1,28 @@
 @import "./index.scss";
 
-.ui.form {
-  .ui.input {
-    input {
-      border: 1px solid $border-grey-light;
-      font-size: 16px;
-    }
-  }
-
-  .actions {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-  }
-
-  .ui.button.submit {
-    background-color: $primary;
-    color: $font-light;
+//variables glboales de index.js
+body {
     margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+      "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: $background-dark-web;
   }
-}
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+      monospace;
+  }
+
+//variables glboales de app.js
+.success {
+    border: 1px solid $success;
+    background-color: $background-success;
+  }
+  
+  .error {
+    border: 1px solid $error;
+    background-color: $background-error;
+  }

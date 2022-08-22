@@ -1,23 +1,56 @@
-$color-bg: #ffffff;
-$accent-1: #fafafa;
-$accent-2: #eaeaea;
-$accent-3: #999999;
-$accent-4: #888888;
-$accent-5: #666666;
-$accent-6: #444444;
-$accent-7: #333333;
-$accent-8: #111111;
-$color-fg: #000000;
+$defaultFontSize: 16px;
 
-$color-success: #0070f3;
+$primary-color: #0098d3;
+$primary-color-hover: #0280b3;
+$primary-color-light: #6ec1e4;
+$primary-color-dark: #8698a5;
 
-$color-warning: #ab570a;
+$menu-color: #252527;
 
-$color-error: #c50000;
+$font-light: #fff;
+$font-grey-light: #e8e8e8;
+$font-grey: #808080;
+$font-grey-dark: #000;
+$font-dark-light: #252527;
+$font-dark: #000;
 
-$color-shadow: rgba(0, 0, 0, 0.16);
+$border-light: #fff;
+$border-grey-light: #e8e8e8;
+$border-grey: #808080;
+$border-grey-dark: #595959;
+$border-dark-light: #252527;
+$border-dark: #000;
 
-$shadow-sm: 0 1px 4px -2px $color-shadow;
-$shadow-nm: 0 2px 12px -4px $color-shadow;
-$shadow-md: 0 4px 12px -4px $color-shadow;
-$shadow-lg: 0 8px 16px -6px $color-shadow;
+$background-light: #fff;
+$background-grey-light: #e8e8e8;
+$background-grey: #808080;
+$background-grey-dark: #595959;
+$background-dark-light: #252527;
+$background-dark: #000;
+$background-success: #84b84c1f;
+$background-error: #ff00001f;
+$background-dark-web: #16202b;
+$background-dark-light-web: #1a2734;
+
+$success: #84b84c;
+$error: #f00;
+
+// Social Color
+$youtube: #cd201f;
+$twitter: #1da1f2;
+$facebook: #3b5998;
+$linkedin: #0077b5;
+
+// Responsive down size
+$media-breackpoint-down-xs: 413.98px;
+$media-breackpoint-down-sm: 573.98px;
+$media-breackpoint-down-md: 767.98px;
+$media-breackpoint-down-lg: 991.98px;
+$media-breackpoint-down-xl: 1199.98px;
+
+// Responsive up size
+$media-breackpoint-up-xs: 320px;
+$media-breackpoint-up-sm: 576px;
+$media-breackpoint-up-md: 768px;
+$media-breackpoint-up-lg: 992px;
+$media-breackpoint-up-xl: 1200px;

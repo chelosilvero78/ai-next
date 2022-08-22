@@ -1,5 +1,7 @@
 import Head from 'next/head';
-import { Navbar, SideMenu } from '../ui';
+import { Row, Col } from "antd";
+import MenuwebTop from "../../components/Web/MenuwebTop";
+import Footer from "../../components/Web/Footer";
 
 export const PublicLayout = ({ children, title, pageDescription, imageFullUrl }) => {
   return (
@@ -20,25 +22,15 @@ export const PublicLayout = ({ children, title, pageDescription, imageFullUrl })
             }
 
         </Head> 
-        <nav>
-            <Navbar />
-        </nav>
-        
-        <SideMenu />
-
-        <main style={{
-            margin: '80px auto',
-            maxWidth: '1440px',
-            padding: '0px 30px'
-        }}>
-            { children }
-        </main>
-
-        {/* Footer */}
-        <footer>
-            {/* TODO: mi custom footer */}
-        </footer>
-
+        <Row>
+        <Col lg={4} />
+        <Col lg={16}>
+          <MenuwebTop />
+        </Col>
+        <Col lg={4} />
+      </Row>
+      {children}
+      <Footer />
     </>
   )
 }
