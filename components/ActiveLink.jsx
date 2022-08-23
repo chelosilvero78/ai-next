@@ -1,6 +1,6 @@
+import Link from 'next/link';
 import { useRouter } from 'next/router';
 
-import Link from 'next/link';
 
 const style = {
     color: '#0070f3',

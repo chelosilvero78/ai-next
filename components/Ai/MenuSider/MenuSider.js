@@ -1,15 +1,14 @@
-import React from "react";
 import { Link, withRouter } from "react-router-dom";
 import { Layout, Menu } from "antd";
-import { SnippetsOutlined, FileOutlined, UserOutlined, CarryOutOutlined, 
-  TeamOutlined, BookOutlined, MenuOutlined,MessageOutlined,SearchOutlined,
-  WechatOutlined, PlusSquareOutlined  } from "@ant-design/icons";
-
-import "./MenuSider.scss";
+import {
+  SnippetsOutlined, FileOutlined, UserOutlined, CarryOutOutlined,
+  TeamOutlined, BookOutlined, MenuOutlined, MessageOutlined, SearchOutlined,
+  WechatOutlined, PlusSquareOutlined
+} from "@ant-design/icons";
 
 function MenuSider(props) {
   // const { menuCollapsed, location } = props;
-  const { menuCollapsed,} = props;
+  const { menuCollapsed, } = props;
   const { Sider } = Layout;
   const { SubMenu } = Menu;
 
@@ -23,7 +22,7 @@ function MenuSider(props) {
   //     toggleCollapsed: !toggleCollapsed,
   //   });
   // };
-  
+
   //const {WhatsAppOutlined}=Icon
   return (
     <Sider className="ai-sider" collapsed={menuCollapsed}>
@@ -43,7 +42,7 @@ function MenuSider(props) {
           }
         >
           <Menu.Item key="5">
-            <Link to="/ai/actividades">
+            <Link href="/ai/actividades">
               <SnippetsOutlined />
               <span>Actividades</span>
             </Link>
@@ -58,7 +57,7 @@ function MenuSider(props) {
           <Menu.Item key="13">Ciudades</Menu.Item>
           <Menu.Item key="14">Departamentos</Menu.Item>
           <Menu.Item key="15">
-            <Link to="/ai/personas">
+            <Link href="/ai/personas">
               <UserOutlined />
               <span>Personas</span>
             </Link>
@@ -77,74 +76,96 @@ function MenuSider(props) {
           <Menu.Item key="18">Tareas Administrador</Menu.Item>
           <Menu.Item key="19">Subir Legajos</Menu.Item>
           <Menu.Item key="20">
-            <Link to="/ai/tareas">
-              <CarryOutOutlined />
-              <span>Tareas</span>
+            <Link href="/ai/tareas">
+              <a>
+                <CarryOutOutlined />
+                <span>Tareas</span>
+              </a>
             </Link>
           </Menu.Item>
           <Menu.Item key="21">
-            <Link to="/ai/arqueo-pagares">
-              <CarryOutOutlined />
-              <span>Arqueo Pagares</span>
+            <Link href="/ai/arqueo-pagares">
+              <a>
+                <CarryOutOutlined />
+                <span>Arqueo Pagares</span>
+              </a>
             </Link>
           </Menu.Item>
         </SubMenu>
         <Menu.Item key="22">
-          <Link to="/ai/users">
-            <TeamOutlined />
-            <span className="nac-text">Usuarios</span>
+          <Link href="/ai/users">
+            <a>
+              <TeamOutlined />
+              <span className="nac-text">Usuarios</span>
+            </a>
           </Link>
         </Menu.Item>
         <Menu.Item key="23">
-          <Link to="/ai/menu">
-            <MenuOutlined />
-            <span className="nac-text">Menú</span>
+          <Link href="/ai/menu">
+            <a>
+              <MenuOutlined />
+              <span className="nac-text">Menú</span>
+            </a>
           </Link>
         </Menu.Item>
         <Menu.Item key="24">
-          <Link to="/ai/informes">
-            <BookOutlined />
-            <span className="nac-text">Informes</span>
+          <Link href="/ai/informes">
+            <a>
+              <BookOutlined />
+              <span className="nac-text">Informes</span>
+            </a>
           </Link>
         </Menu.Item>
         <Menu.Item key="25">
-          <Link to="/ai/blog">
-            <MessageOutlined />
-            <span className="nac-text">Blog</span>
+          <Link href="/ai/blog">
+            <a>
+              <MessageOutlined />
+              <span className="nac-text">Blog</span>
+            </a>
           </Link>
         </Menu.Item>
         <Menu.Item key="26">
-          <Link to="/ai/persona">
-            <UserOutlined />
-            <span className="nac-text">Persona</span>
+          <Link href="/ai/persona">
+            <a>
+              <UserOutlined />
+              <span className="nac-text">Persona</span>
+            </a>
           </Link>
         </Menu.Item>
         <Menu.Item key="27">
-          <Link to="/ai/stepform">
-            <PlusSquareOutlined />
-            <span className="nac-text">Stepform</span>
+          <Link href="/ai/stepform">
+            <a>
+              <PlusSquareOutlined />
+              <span className="nac-text">Stepform</span>
+            </a>
           </Link>
         </Menu.Item>
         <Menu.Item key="28">
-          <Link to="/ai/autocompleteform">
-            <SearchOutlined />
-            <span className="nac-text">autocompleteform</span>
+          <Link href="/ai/autocompleteform">
+            <a>
+              <SearchOutlined />
+              <span className="nac-text">autocompleteform</span>
+            </a>
           </Link>
         </Menu.Item>
         <Menu.Item key="29">
-          <Link to="/ai/chat">
-            <WechatOutlined />
-            <span className="nac-text">chat</span>
+          <Link href="/ai/chat">
+            <a>
+              <WechatOutlined />
+              <span className="nac-text">chat</span>
+            </a>
           </Link>
         </Menu.Item>
         <Menu.Item key="30">
-          <Link to="/ai/band-app">
-            <WechatOutlined />
-            <span className="nac-text">Votar</span>
+          <Link href="/ai/band-app">
+            <a>
+              <WechatOutlined />
+              <span className="nac-text">Votar</span>
+            </a>
           </Link>
         </Menu.Item>
       </Menu>
-      
+
     </Sider>
   );
 }

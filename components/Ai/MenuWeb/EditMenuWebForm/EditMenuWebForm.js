@@ -1,10 +1,8 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Form, Input, Button, notification } from "antd";
 import { updateMenuApi } from "../../../../api/menu";
 import { getAccessTokenApi } from "../../../../api/auth";
 import { FontSizeOutlined,LinkOutlined } from "@ant-design/icons";
-
-import "./EditMenuWebForm.scss";
 
 export default function EditMenuWebForm(props) {
   const { setIsVisibleModal, setReloadMenuWeb, menu } = props;

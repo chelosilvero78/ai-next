@@ -15,16 +15,48 @@
 // @import "../pages/cart.scss";
 // @import "../pages/orders.scss";
 
-// Components
-@import "../components/Web/MainBanner/MainBanner.scss";  //import "./MainBanner.scss";
-@import "../components/Web/HomePublicTopic/HomePublicTopic.scss";  //../components/Web/HomePublicTopic
-@import "../components/Web/HowSystemWork/HowSystemWork.scss";  //import "./HowSystemWork.scss";
-@import "../components/Web/Footer/NavigationFooter/NavigationFooter.scss";  //import "./NavigationFooter.scss";;
+
+// << Components >>
+@import "../components/Web/MainBanner/MainBanner.scss";  
+@import "../components/Web/HomePublicTopic/HomePublicTopic.scss";
+@import "../components/Web/HowSystemWork/HowSystemWork.scss";  
+@import "../components/Web/Footer/NavigationFooter/NavigationFooter.scss";  
 @import "../components/Web/Footer/Footer.scss";
-@import "../components/Web/MenuwebTop/MenuwebTop.scss"; //import "./MenuwebTop.scss";
-@import "../components/Web/Newsletter/Newsletter.scss"; //import "./MyInfo.scss";
-@import "../components/Web/ReviewsCourses/ReviewsCourses.scss"; //import "./ReviewsCourses.scss";
-@import "../components/Web/SocialLinks/SocialLinks.scss"; //import "./ReviewsCourses.scss";
+@import "../components/Web/MenuwebTop/MenuwebTop.scss"; 
+@import "../components/Web/Newsletter/Newsletter.scss"; 
+@import "../components/Web/ReviewsCourses/ReviewsCourses.scss"; 
+@import "../components/Web/SocialLinks/SocialLinks.scss"; 
+@import "../components/Web/Blog/PostsListWeb/PostsListWeb.scss";
+@import "../components/Ai/MenuWeb/MenuWebList/MenuWebList.scss";
+
+
+
+//import "./components/Admin/MenuSider/MenuSider.scss";
+@import "../components/Admin/MenuSider/MenuSider.scss";
+@import "../components/Admin/Blog/PostsList/PostsList.scss";
+@import "../components/Admin/Blog/AddEditPostForm/AddEditPostForm.scss";
+@import "../components/Admin/MenuWeb/EditMenuWebForm/EditMenuWebForm.scss";
+@import "../components/Admin/Topics/AddEditTopicForm/AddEditTopicForm.scss";
+@import "../components/Ai/Blog/AddEditPostForm/AddEditPostForm.scss";
+@import "../components/Ai/Blog/PostsList/PostsList.scss";
+@import "../components/Ai/Courses/AddEditCourseForm/AddEditCourseForm.scss";
+@import "../components/Ai/MenuSider/MenuSider.scss";
+@import "../components/Ai/MenuWeb/EditMenuWebForm/EditMenuWebForm.scss";
+@import "../components/Ai/Persona/AddEditPersonaForm/AddEditPersonaForm.scss";
+@import "../components/Ai/Persona/PersonaList/PersonaList.scss";
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // @import "../components/Header/Header.scss";
 // @import "../components/Header/TopBar/TopBar.scss";

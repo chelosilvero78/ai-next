@@ -4,8 +4,6 @@ import { getAccessTokenApi } from "../../../../api/auth";
 import { addTopicApi, updateTopicApi } from "../../../../api/topic";
 import { KeyOutlined, LinkOutlined,GifOutlined, DollarOutlined  } from "@ant-design/icons";
 
-import "./AddEditTopicForm.scss";
-
 export default function AddEditTopicForm(props) {
   const { setIsVisibleModal, setReloadTopics, topic } = props;
   const [topicData, setTopicData] = useState({});

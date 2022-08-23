@@ -9,7 +9,6 @@ import imgObjetivosEmpresariales from "../../../assets/img/jpg/brujula-audit.jpg
 import imgPlanificacion from "../../../assets/img/jpg/Internal-audit-schedule.jpg";
 import imgBlog from "../../../assets/img/jpg/business-blog.jpg";
 
-
 export default function HomePublicTopic() {
   return (
     <Row className="home-public-topic">

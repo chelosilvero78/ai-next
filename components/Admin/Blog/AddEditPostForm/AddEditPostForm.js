@@ -14,7 +14,6 @@ import { FontSizeOutlined, LinkOutlined } from "@ant-design/icons";
 import { getAccessTokenApi } from "../../../../api/auth";
 import { addPostApi, updatePostApi } from "../../../../api/post";
 
-import "./AddEditPostForm.scss";
 
 const AddEditPostForm=(props)=> {
   const { setIsVisibleModal, setReloadPosts, post } = props;

@@ -1,11 +1,8 @@
-import React from "react";
 import { List, Button, Modal, notification } from "antd";
 import { Link } from "react-router-dom";
 import { getAccessTokenApi } from "../../../../api/auth";
 import { deletePostApi } from "../../../../api/post";
 import { EditOutlined, EyeOutlined,DeleteOutlined } from "@ant-design/icons";
-
-import "./PostsList.scss";
 
 const { confirm } = Modal;
 
@@ -58,15 +55,15 @@ function Post(props) {
   return (
     <List.Item
       actions={[
-        <Link to={`/blog/${post.url}`} target="_blank">
+        <Link key="1" href={`/blog/${post.url}`} target="_blank">
           <Button type="primary">
             <EyeOutlined />
           </Button>
         </Link>,
-        <Button type="primary" onClick={() => editPost(post)}>
+        <Button key="2" type="primary" onClick={() => editPost(post)}>
           <EditOutlined />
         </Button>,
-        <Button type="danger" onClick={() => deletePost(post)}>
+        <Button key="3" type="danger" onClick={() => deletePost(post)}>
           <DeleteOutlined />
         </Button>
       ]}

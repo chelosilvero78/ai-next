@@ -1,8 +1,4 @@
-import React from "react";
-import { ReactComponent as YouTubeIcon } from "../../../assets/img/svg/youtube.svg";
-import { ReactComponent as TwitterIcon } from "../../../assets/img/svg/twitter.svg";
-import { ReactComponent as FacebookIcon } from "../../../assets/img/svg/facebook.svg";
-import { ReactComponent as LinkedinIcon } from "../../../assets/img/svg/linkedin.svg";
+import { YouTubeIcon,TwitterIcon,FacebookIcon,LinkedinIcon } from "../../assets/svg";
 
 export default function SocialLinks() {
   return (

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Spin, List, notification } from "antd";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
@@ -7,8 +7,6 @@ import queryString from "query-string";
 import Pagination from "../../../Pagination";
 import { getPostsApi } from "../../../../api/post";
 import "moment/locale/es";
-
-import "./PostsListWeb.scss";
 
 export default function PostsListWeb(props) {
   const { location, history } = props;

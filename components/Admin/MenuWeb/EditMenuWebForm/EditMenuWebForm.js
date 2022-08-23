@@ -4,8 +4,6 @@ import { updateMenuwebApi } from "../../../../api/menuweb";
 import { getAccessTokenApi } from "../../../../api/auth";
 import { FontSizeOutlined, LinkOutlined } from "@ant-design/icons";
 
-import "./EditMenuWebForm.scss";
-
 export default function EditMenuWebForm(props) {
   const { setIsVisibleModal, setReloadMenuWeb, menuweb } = props;
   const [menuWebData, setMenuWebData] = useState(menuweb);

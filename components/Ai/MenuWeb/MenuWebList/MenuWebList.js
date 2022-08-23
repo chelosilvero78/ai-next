@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import {
   Switch,
   List,
@@ -18,7 +18,6 @@ import AddMenuWebForm from "../AddMenuWebForm";
 import EditMenuWebForm from "../EditMenuWebForm";
 import { EditOutlined, DeleteOutlined } from "@ant-design/icons";
 
-import "./MenuWebList.scss";
 
 const { confirm } = ModalAntd;
 
@@ -144,14 +143,14 @@ function MenuItem(props) {
   return (
     <List.Item
       actions={[
-        <Switch
+        <Switch key="1"
           defaultChecked={item.active}
           onChange={e => activateMenu(item, e)}
         />,
-        <Button type="primary" onClick={() => editMenuWebModal(item)}>
+        <Button key="2" type="primary" onClick={() => editMenuWebModal(item)}>
           <EditOutlined />
         </Button>,
-        <Button type="danger" onClick={() => deleteMenu(item)}>
+        <Button key="3" type="danger" onClick={() => deleteMenu(item)}>
           <DeleteOutlined />
         </Button>
       ]}

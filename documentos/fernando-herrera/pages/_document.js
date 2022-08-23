@@ -10,8 +10,6 @@ export default class MyDocument extends Document {
       return (
         <html lang="es">
             <Head>
-                <meta charSet="UTF-8" />
-
                 <link rel="shortcut icon" type="/image/png" href="/img/favicon.png" />
                 {/* <link rel="apple-touch-icon" href="/img/apple-touch-icon.png" /> */}
             </Head>

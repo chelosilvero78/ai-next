@@ -14,8 +14,6 @@ import { getAccessTokenApi } from "../../../../api/auth";
 import { addPostApi, updatePostApi } from "../../../../api/post";
 import { FontSizeOutlined, LinkOutlined } from "@ant-design/icons";
 
-import "./AddEditPostForm.scss";
-
 export default function AddEditPostForm(props) {
   const { setIsVisibleModal, setReloadPosts, post } = props;
   const [postData, setPostData] = useState({});

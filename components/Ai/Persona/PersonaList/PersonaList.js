@@ -1,11 +1,8 @@
-import React from "react";
 import { List, Button, Modal, notification } from "antd";
 import { Link } from "react-router-dom";
 import { getAccessTokenApi } from "../../../../api/auth";
 import { deletePersonaApi } from "../../../../api/persona";
 import { EyeOutlined,EditOutlined,DeleteOutlined } from "@ant-design/icons";
-
-import "./PersonaList.scss";
 
 const { confirm } = Modal;
 
@@ -59,15 +56,15 @@ function Persona(props) {
   return (
     <List.Item
       actions={[
-        <Link to={`/persona/${persona.id}`} target="_blank">
+        <Link key="1" href={`/persona/${persona.id}`} target="_blank">
           <Button type="primary">
             <EyeOutlined />
           </Button>
         </Link>,
-        <Button type="primary" onClick={() => editPersona(persona)}>
+        <Button key="2" type="primary" onClick={() => editPersona(persona)}>
           <EditOutlined />
         </Button>,
-        <Button type="danger" onClick={() => deletePersona(persona)}>
+        <Button key="3" type="danger" onClick={() => deletePersona(persona)}>
           <DeleteOutlined />
         </Button>
       ]}

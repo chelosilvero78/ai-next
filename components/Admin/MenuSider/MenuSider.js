@@ -1,9 +1,7 @@
-import React from "react";
-import { Link, withRouter } from "react-router-dom";
+import Link from "next/link";
 import { Layout, Menu } from "antd";
-import { UserOutlined,MenuOutlined,BookOutlined,MessageOutlined} from '@ant-design/icons';
+import { UserOutlined, MenuOutlined, BookOutlined, MessageOutlined } from '@ant-design/icons';
 
-import "./MenuSider.scss";
 
 function MenuSider(props) {
   // const { menuCollapsed, location } = props;
@@ -19,33 +17,41 @@ function MenuSider(props) {
         defaultSelectedKeys={["/admin/users"]}
       >
         {/* <Menu.Item key="/admin">
-          <Link to="/admin">
+          <Link href="/admin">
             <HomeOutlined />
             <span className="nav-text">Home</span>
           </Link>
         </Menu.Item> */}
         <Menu.Item key="/admin/users">
-          <Link to="/admin/users">
-            <UserOutlined />
-            <span className="nac-text">Usuarios</span>
+          <Link href="/admin/users">
+            <a>
+              <UserOutlined />
+              <span className="nac-text">Usuarios</span>
+            </a>
           </Link>
         </Menu.Item>
         <Menu.Item key="/admin/menuweb">
-          <Link to="/admin/menuweb">
-            <MenuOutlined />
-            <span className="nac-text">Menú</span>            
+          <Link href="/admin/menuweb">
+            <a>
+              <MenuOutlined />
+              <span className="nac-text">Menú</span>
+            </a>
           </Link>
         </Menu.Item>
         <Menu.Item key="/admin/topics">
-          <Link to="/admin/topics">
-            <BookOutlined />
-            <span className="nac-text">Cursos</span>
+          <Link href="/admin/topics">
+            <a>
+              <BookOutlined />
+              <span className="nac-text">Cursos</span>
+            </a>
           </Link>
         </Menu.Item>
         <Menu.Item key="/admin/blog">
-          <Link to="/admin/blog">
-            <MessageOutlined />
-            <span className="nac-text">Blog</span>
+          <Link href="/admin/blog">
+            <a>
+              <MessageOutlined />
+              <span className="nac-text">Blog</span>
+            </a>
           </Link>
         </Menu.Item>
       </Menu>

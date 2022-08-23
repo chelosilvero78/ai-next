@@ -15,6 +15,24 @@ export default function MyApp({ Component, pageProps }) {
   // const getLayout = Component.getLayout || ((page) => page);
 
   // return getLayout( <Component {...pageProps} /> )
+
+  console.log("Rendering App...");
+
+  const store = useStore(pageProps.initialReduxState);
+  const dispatch = store.dispatch;
+  const getState = store.getState;
+
+  useEffect(() => {
+    console.log("store has changed");
+  }, [store]);
+
+  useEffect(() => {
+    console.log("dispatch has changed");
+  }, [dispatch]);
+
+  useEffect(() => {
+    console.log("getState has changed");
+  }, [getState]);
   return (
     <>
       <Head>

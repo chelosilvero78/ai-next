@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from "react";
+import Image from "next/image";
+import { useState, useEffect } from "react";
 import { Menu } from "antd";
 import Link from 'next/link'
 import SocialLinks from "../SocialLinks";
@@ -23,8 +24,10 @@ export default function MenuwebTop() {
     <Menu className="menuweb-top-web" mode="horizontal">
       <Menu.Item className="menuweb-top-web__logo">
         <Link href={"/"}>
-          <img src={logoWhite} alt="Auditoria Interna" />
-          AI
+          <a>
+            <Image src={logoWhite} alt="Auditoria Interna" />
+            AI
+          </a>
         </Link>
       </Menu.Item>
 

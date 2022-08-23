@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import {
   Row,
   Col,
@@ -14,7 +14,6 @@ import { Editor } from "@tinymce/tinymce-react";
 import { getAccessTokenApi } from "../../../../api/auth";
 import { addPersonaApi, updatePersonaApi } from "../../../../api/persona";
 import { getTipodocsApi } from "../../../../api/tipodoc";
-import "./AddEditPersonaForm.scss";
 import { LinkOutlined,FontSizeOutlined } from "@ant-design/icons";
 
 const { Option } = Select;
