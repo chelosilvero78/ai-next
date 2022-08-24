@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import { Provider } from 'react-redux';
-import store from '../stores/store';
+import { store, wrapper } from '../redux/store';
 import { SocketProvider } from '../context/SocketContext';
 
 // import 'primereact/resources/themes/nova-light/theme.css';
@@ -10,29 +10,29 @@ import { SocketProvider } from '../context/SocketContext';
 import '../styles/global.scss';
 
 
-export default function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps }) {
 
   // const getLayout = Component.getLayout || ((page) => page);
 
   // return getLayout( <Component {...pageProps} /> )
 
-  console.log("Rendering App...");
+  // console.log("Rendering App...");
 
-  const store = useStore(pageProps.initialReduxState);
-  const dispatch = store.dispatch;
-  const getState = store.getState;
+  // const store = useStore(pageProps.initialReduxState);
+  // const dispatch = store.dispatch;
+  // const getState = store.getState;
 
-  useEffect(() => {
-    console.log("store has changed");
-  }, [store]);
+  // useEffect(() => {
+  //   console.log("store has changed");
+  // }, [store]);
 
-  useEffect(() => {
-    console.log("dispatch has changed");
-  }, [dispatch]);
+  // useEffect(() => {
+  //   console.log("dispatch has changed");
+  // }, [dispatch]);
 
-  useEffect(() => {
-    console.log("getState has changed");
-  }, [getState]);
+  // useEffect(() => {
+  //   console.log("getState has changed");
+  // }, [getState]);
   return (
     <>
       <Head>
@@ -46,3 +46,5 @@ export default function MyApp({ Component, pageProps }) {
     </>
   )
 }
+
+export default wrapper.withRedux(MyApp);  

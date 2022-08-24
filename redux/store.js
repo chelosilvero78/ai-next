@@ -1,7 +1,8 @@
 //-------->   yarn add react-redux redux redux-thunk
 import { createStore, applyMiddleware } from 'redux';
-import { composeWithDevTools } from "redux-devtools-extension";  //para controlar cambios de redux en el explorador, yarn add redux-devtools-extension [--save-dev || -D ]
 import thunk from 'redux-thunk';
+import { composeWithDevTools } from "redux-devtools-extension";  //para controlar cambios de redux en el explorador, yarn add redux-devtools-extension [--save-dev || -D ]
+import { createWrapper } from "next-redux-wrapper";  //agregado por masr 20220824_1312s
 import rootReducer from './reducers';  //agrupamiento de todos los redux
 //import { ACCESS_TOKEN, REFRESH_TOKEN } from "../utils/constants";  //const string-> 'accessToken' y 'refreshToken'
 
@@ -15,11 +16,14 @@ import rootReducer from './reducers';  //agrupamiento de todos los redux
 //  }
 
 
-const middleware = [thunk];
+
 
 //--------------------localStorage--------------
 
 //if (typeof window !== "undefined"){
+    const isClient = typeof window !== 'undefined';
+
+    // const isProductionMode =process.env.NODE_ENV && process.env.NODE_ENV.trim() === 'production';
 
     const accessTokenFromStorage =(typeof window !== "undefined")
     ? localStorage.getItem('accessToken')
@@ -46,6 +50,7 @@ const middleware = [thunk];
 
 
 //==========estado global inicial===========================
+// 1- initial states here
 const initialState = {
     authLogin: {
         accessToken: accessTokenFromStorage,
@@ -70,12 +75,18 @@ const initialState = {
 }
 //==========estado global inicial===========================
 
+// 2- middleware
+const middleware = [thunk];
 
 //crear el store******************************
-const store = createStore(
+// 3- creating store
+export const store = createStore(
     rootReducer,
     initialState,
     composeWithDevTools(applyMiddleware(...middleware))
 );
 
-export default store;
+// 4- assigning store to next wrapper
+const makeStore = () => store;
+
+export const wrapper = createWrapper(makeStore);

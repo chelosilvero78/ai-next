@@ -3,7 +3,7 @@ import { useCallback, useEffect, useState } from 'react';
 import io from 'socket.io-client';
 import { ACCESS_TOKEN } from "../utils/constants";
 import { useDispatch/*, useSelector*/ } from 'react-redux';
-import { startSocket, closeSocket, onlineSocket } from "../stores/actions/chatActions";
+import { startSocket, closeSocket, onlineSocket } from "../redux/actions/chatActions";
 
 export const useSocket = (serverPath) => {
     const dispatch = useDispatch();  //nos va a permitir llamar acciones de redux  :)

@@ -1,5 +1,5 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document';
-import {ServerStyleSheets} from '@mui/styles';
+// // // import {ServerStyleSheets} from '@mui/styles';
 
 export default class MyDocument extends Document {
   static async getInitialProps(ctx) {
@@ -62,12 +62,13 @@ MyDocument.getInitialProps = async (ctx) => {
 
   // Render app and page and get the context of the page with collected side effects.
   // Renderice la aplicación y la página y obtenga el contexto de la página con los efectos secundarios recopilados.
-  const sheets = new ServerStyleSheets();
+  // //  // const sheets = new ServerStyleSheets();
   const originalRenderPage = ctx.renderPage;
 
   ctx.renderPage = () =>
       originalRenderPage({
-        enhanceApp: (App) => (props) => sheets.collect(<App {...props} />),
+        // enhanceApp: (App) => (props) => sheets.collect(<App {...props} />),
+        enhanceApp: (App) => (props) => {<App {...props} />},
       });
 
   const initialProps = await Document.getInitialProps(ctx);
@@ -76,6 +77,6 @@ MyDocument.getInitialProps = async (ctx) => {
     ...initialProps,
     // Styles fragment is rendered after the app and page rendering finish.
     // El fragmento de estilos se representa después de que finaliza la representación de la aplicación y la página
-    styles: [...React.Children.toArray(initialProps.styles), sheets.getStyleElement()],
+    //  //  //  styles: [...React.Children.toArray(initialProps.styles), sheets.getStyleElement()],
   };
 };

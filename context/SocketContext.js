@@ -6,7 +6,7 @@ import { useSocket } from '../hooks/useSocket'
 // import { scrollToBottomAnimated } from '../helpers/chat-app/scrollToBottom';
 // import store from "../../stores/store";
 import { useDispatch, useSelector } from 'react-redux';
-import { usersLoadeds /*, newMessages, startSocket*/ } from "../stores/actions/chatActions";
+import { usersLoadeds /*, newMessages, startSocket*/ } from "../redux/actions/chatActions";
 
 export const SocketContext = createContext();
 
