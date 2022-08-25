@@ -6,51 +6,25 @@ import { createWrapper } from "next-redux-wrapper";  //agregado por masr 2022082
 import rootReducer from './reducers';  //agrupamiento de todos los redux
 //import { ACCESS_TOKEN, REFRESH_TOKEN } from "../utils/constants";  //const string-> 'accessToken' y 'refreshToken'
 
-
-// if(typeof window !== "undefined") {
-//     if(localStorage.getItem("watchlist")) {
-//       return JSON.parse(localStorage.getItem("watchlist"))
-//     } else{
-//     return []
-//     }
-//  }
+// const isProductionMode =process.env.NODE_ENV && process.env.NODE_ENV.trim() === 'production';
 
 
+// CAMBIO PARA NEXTJS, CONTROLAR SI LA EJECUCION ES DEL LADO DEL CLIENTE O SERVER? 
 
+// const ISSERVER = typeof window === "undefined";  //SERVER
+// const isClient = typeof window !== 'undefined';  //CLIENT
 
-//--------------------localStorage--------------
+// if(!ISSERVER) {
+//     // Access localStorage
+//     ...localStorage.get...
+// }
 
-//if (typeof window !== "undefined"){
-    const isClient = typeof window !== 'undefined';
+const isClient = typeof window !== 'undefined';
 
-    // const isProductionMode =process.env.NODE_ENV && process.env.NODE_ENV.trim() === 'production';
+let accessTokenFromStorage = null;
+let refreshTokenFromStorage = null;
 
-    const accessTokenFromStorage =(typeof window !== "undefined")
-    ? localStorage.getItem('accessToken')
-    : null
-
-    const refreshTokenFromStorage = (typeof window !== "undefined")
-    ? localStorage.getItem('refreshToken')
-    : null
-
-// const userInfoFromStorage = localStorage.getItem('userInfo')
-//     ? JSON.parse(localStorage.getItem('userInfo'))
-//     : null
-
-// const cartItemsFromStorage = localStorage.getItem('cartItems')
-//     ? JSON.parse(localStorage.getItem('cartItems'))
-//     : []
-
-// const shippingAddressFromStorage = localStorage.getItem('shippingAddress')
-//     ? JSON.parse(localStorage.getItem('shippingAddress'))
-//     : {}
-//--------------------localStorage--------------
-
-
-
-
-//==========estado global inicial===========================
-// 1- initial states here
+// 1- initial states here if it server side
 const initialState = {
     authLogin: {
         accessToken: accessTokenFromStorage,
@@ -68,12 +42,27 @@ const initialState = {
         usuarios: [], // Todos los usuarios de la base datos
         mensajes: [], // El chat seleccionado   
     },
-    // cart: {
-    //     cartItems: cartItemsFromStorage,
-    //     shippingAddress: shippingAddressFromStorage,
-    // },
 }
-//==========estado global inicial===========================
+
+
+
+if (isClient) {
+
+    //get local storage if it client side
+    accessTokenFromStorage = localStorage.getItem('accessToken')
+    ? localStorage.getItem('accessToken')
+    : null
+    
+    refreshTokenFromStorage = localStorage.getItem('refreshToken')
+    ? localStorage.getItem('refreshToken')
+    : null
+    
+    // 1- initial states here if it client side
+    initialState.authLogin.accessToken=accessTokenFromStorage;
+    initialState.authLogin.refreshToken=refreshTokenFromStorage;
+}
+
+
 
 // 2- middleware
 const middleware = [thunk];
